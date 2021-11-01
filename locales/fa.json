@@ -1,167 +1,167 @@
 {
     "clip": {
-      "description": "Plays a clip sound",
-      "usagesReply": "Usage: /clip <name>",
-      "errorQueue": "Can't play clip because there is an active queue.",
-      "errorNotChannel": "You need to join a voice channel first!"
+      "description": "پخش صدای کلیپ",
+      "usagesReply": "استفاده: /clip <اسم>",
+      "errorQueue": "نمیتوانم این کلیپ را پخش کنم چون صف دیگری وجود دارد .",
+      "errorNotChannel": "شما اول باید وارد ویس چنل شوید!"
     },
     "clips": {
-      "description": "List all clips"
+      "description": "لیست همه کلیپ ها"
     },
     "help": {
-      "description": "Display all commands and descriptions",
+      "description": "نمایش تمام دستورات و توضیحات",
       "embedTitle": "{botname} Help",
-      "embedDescription": "List of all commands"
+      "embedDescription": "نمایش تمام دستورات "
     },
     "invite": {
-      "description": "Send bot invite link"
+      "description": "ارسال لینک دعوت ربات"
     },
     "loop": {
-      "description": "Toggle music loop",
-      "errorNotQueue": "There is nothing playing.",
-      "result": "Loop is now {loop}"
+      "description": "حلقه موسیقی را تغییر دهید",
+      "errorNotQueue": "چیزی برای پلی نیست.",
+      "result": "حلقه الان است {loop}"
     },
     "lyrics": {
-      "description": "Get lyrics for the currently playing song",
-      "errorNotQueue": "There is nothing playing.",
-      "lyricsNotFound": "No lyrics found for {title}.",
-      "embedTitle": "{title} - Lyrics"
+      "description": "متن آهنگ در حال پخش را دریافت کنید",
+      "errorNotQueue": "اهنگی برای پخش نیست.",
+      "lyricsNotFound": "متنی برای اهنگ نیست{title}.",
+      "embedTitle": "{title} - متن"
     },
     "move": {
-      "description": "Move songs around in the queue",
-      "errorNotQueue": "There is no queue.",
-      "usagesReply": "Usage: {prefix}move <Queue Number>",
+      "description": "آهنگ ها را در صف جابه جا کنید",
+      "errorNotQueue": "صفی وجود ندارد.",
+      "usagesReply": "استفاده: {prefix}move <Queue Number>",
       "result": "<@{author}> 🚚 moved **{title}** to {index} in the queue."
     },
     "nowplaying": {
-      "description": "Show now playing song",
-      "errorNotQueue": "There is nothing playing.",
-      "embedTitle": "Now playing",
-      "live": " ◉ LIVE",
-      "timeRemaining": "Time Remaining: {time}"
+      "description": "نمایشش اهنگ درحال پخش",
+      "errorNotQueue": "چیزی برای پخش نیست.",
+      "embedTitle": "در حال پخش",
+      "live": " ◉ زنده",
+      "timeRemaining": "زمان باقی مانده: {time}"
     },
     "pause": {
-      "description": "Pause the currently playing music",
-      "errorNotQueue": "There is nothing playing.",
-      "result": "<@{author}> ⏸ paused the music."
+      "description": "نگه داشتن اهنگ",
+      "errorNotQueue": "چیزی برای پخش نیست.",
+      "result": "<@{author}> ⏸ موزیک نگه داشته شد."
     },
     "ping": {
-      "description": "Show the bot's average ping",
-      "result": "📈 Average ping to API: {ping} ms"
+      "description": "نشان دادن میانگین پینگ ربات",
+      "result": "📈 میانگین پینگ ای پی ای ربات: {ping} ms"
     },
     "play": {
-      "description": "Plays audio from YouTube or Soundcloud",
-      "errorNotChannel": "You need to join a voice channel first!",
-      "errorNotInSameChannel": "You must be in the same channel as {user}",
-      "usageReply": "Usage: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
-      "missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
-      "missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
-      "queueAdded": "✅ **{title}** has been added to the queue by <@{author}>",
-      "cantJoinChannel": "Could not join the channel: {error}",
-      "queueEnded": "❌ Music queue ended.",
-      "queueError": "Error: {error}",
-      "startedPlaying": "🎶 Started playing: **{title}** {url}",
-      "skipSong": "<@{author}> ⏩ skipped the song",
-      "pauseSong": "<@{author}> ⏸ paused the music.",
-      "resumeSong": "<@{author}> ▶ resumed the music!",
-      "unmutedSong": "<@{author}> 🔊 unmuted the music!",
-      "mutedSong": "<@{author}> 🔇 muted the music!",
-      "decreasedVolume": "<@{author}> 🔉 decreased the volume, the volume is now {volume}%",
-      "increasedVolume": "<@{author}> 🔊 increased the volume, the volume is now {volume}%",
-      "loopSong": "<@{author}> Loop is now {loop}",
-      "stopSong": "<@{author}> ⏹ stopped the music!",
-      "leaveChannel": "Leaving voice channel...",
-      "songNotFound": "Audio Not Found"
+      "description": "پخش موزیک از یوتیوب یا ساندکلاد",
+      "errorNotChannel": "شما اول باید وارد یک ویس چنل شوید!",
+      "errorNotInSameChannel": "شما باید در چنل اصلی باشید  {user}",
+      "usageReply": "استفاده: {prefix}play <YouTube URL | Video Name | Soundcloud URL>",
+      "missingPermissionConnect": "نمیتوانم وارد ویس بشوم , مجاوز ندارم",
+      "missingPermissionSpeak": "نمیتوانم در ویس حرف بزنم, مجاوز های من را درست کنید !",
+      "queueAdded": "✅ <@{author}> این موزیک در لیست اد شد توسط **{title}**",
+      "cantJoinChannel": "نمیتوانم وارد چنل بشوم: {error}",
+      "queueEnded": "❌ لیست موزیک به پایان رسید.",
+      "queueError": "ارور: {error}",
+      "startedPlaying": "🎶 شروع پخش: **{title}** {url}",
+      "skipSong": "<@{author}> ⏩ آهنگ را رد کرد",
+      "pauseSong": "<@{author}> ⏸ اهنگ را نگه داشت.",
+      "resumeSong": "<@{author}> ▶ اهنگ رو دوباره پلی کرد!",
+      "unmutedSong": "<@{author}> 🔊 اهنگ راان میوت کرد!",
+      "mutedSong": "<@{author}> 🔇 اهنگ را میوت کرد!",
+      "decreasedVolume": "<@{author}> 🔉 ولوم را کم کرد, ولوم الان روی  {volume}%است",
+      "increasedVolume": "<@{author}> 🔊 ولوم را زیاد کرد, ولوم الان روی  {volume}%است",
+      "loopSong": "<@{author}> حلقه الان است {loop}",
+      "stopSong": "<@{author}> ⏹ موزیک را استوپ کرد!",
+      "leaveChannel": "خروج از چنل...",
+      "songNotFound": "اهنگ پیدا نشد"
     },
     "playlist": {
-      "description": "Play a playlist from youtube",
-      "usagesReply": "Usage: {prefix}playlist <YouTube Playlist URL | Playlist Name>",
-      "errorNotChannel": "You need to join a voice channel first!",
-      "errorNotInSameChannel": "You must be in the same channel as {user}",
-      "missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
-      "missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
-      "errorNotFoundPlaylist": "Playlist not found :(",
-      "fetchingPlaylist": "⌛ fetching the playlist...",
-      "playlistCharLimit": "\nPlaylist larger than character limit...",
-      "startedPlaylist": "<@{author}> Started a playlist",
-      "cantJoinChannel": "Could not join the channel: {error}"
+      "description": "پخش پلی لیست از یوتیوب",
+      "usagesReply": "استفاده: {prefix}playlist <YouTube Playlist URL | Playlist Name>",
+      "errorNotChannel": "شما باید اول وارد ویس چنل شوید!",
+      "errorNotInSameChannel": "شما در چنلی که ربات در ان است نیستید {user}",
+      "missingPermissionConnect": "نمیتوانم وارد ویس بشوم, مجاوز ندارم",
+      "missingPermissionSpeak": "نمیتوانم در ویس حرف بزنم, مجاوز های من را درست کنید !",
+      "errorNotFoundPlaylist": "پلی لیست پیدا نشد :(",
+      "fetchingPlaylist": "⌛پیدا کردن پلی لیست ...",
+      "playlistCharLimit": "\nپلی لیست از اندازه استاندارد بیشنر است...",
+      "startedPlaylist": "<@{author}> پلی لیست را شروع کرد",
+      "cantJoinChannel": "نمیتوانم وارد چنل شوم: {error}"
     },
     "pruning": {
-      "description": "Toggle pruning of bot messages",
-      "errorWritingFile": "There was an error writing to the file.",
-      "result": "Message pruning is {result}"
+      "description": "پیام های ربات را تغییر دهید ",
+      "errorWritingFile": "در نوشتن فایل خطایی روی داد.",
+      "result": "پیام تغییر کرده {result}"
     },
     "queue": {
-      "description": "Show the music queue and now playing.",
-      "missingPermissionMessage": "Missing permission to manage messages or add reactions",
-      "errorNotQueue": "❌ **Nothing playing in this server**",
-      "currentPage": "Current Page - ",
-      "embedTitle": "Song Queue\n",
-      "embedCurrentSong": "**Current Song - [{title}]({url})**\n\n{info}"
+      "description": "نمایش صف موسیقی و در حال پخش.",
+      "missingPermissionMessage": "مجوز مدیریت پیام‌ها یا افزودن واکنش‌ها را از دست داده است",
+      "errorNotQueue": "❌ **هیچ چیزی در این سرور پخش نمی شود**",
+      "currentPage": "صفحه فعلی - ",
+      "embedTitle": "صف آهنگ\n",
+      "embedCurrentSong": "**آهنگ فعلی - [{title}]({url})**\n\n{info}"
     },
     "remove": {
-      "description": "Remove song from the queue",
-      "errorNotQueue": "There is no queue.",
-      "usageReply": "Usage: {prefix}remove <Queue Number>",
-      "result": "<@{author}> ❌ removed **{title}** from the queue."
+      "description": "آهنگ را از صف حذف کنید",
+      "errorNotQueue": "هیچ صفی وجود ندارد.",
+      "usageReply": "استفاده: {prefix}remove <Queue Number>",
+      "result": "<@{author}> ❌ پاکشد **{title}** از لیست."
     },
     "resume": {
-      "description": "Resume currently playing music",
-      "errorNotQueue": "There is nothing playing.",
-      "resultNotPlaying": "<@{author}> ▶ resumed the music!",
-      "errorPlaying": "The queue is not paused."
+      "description": "پخش موسیقی در حال حاضر را از سر بگیرید",
+      "errorNotQueue": "چیزی برای پخش نیست.",
+      "resultNotPlaying": "<@{author}> ▶ اهنگ را از سر گرفت!",
+      "errorPlaying": "این لیست در حال پخش است."
     },
     "search": {
-      "description": "Search and select videos to play",
-      "usageReply": "Usage: {prefix}{name} <Video Name>",
-      "errorAlreadyCollector": "A message collector is already active in this channel.",
-      "errorNotChannel": "You need to join a voice channel first!",
-      "resultEmbedTitle": "**Reply with the song number you want to play**",
-      "resultEmbedDesc": "Results for: {search}"
+      "description": "ویدیوها را برای پخش جستجو و انتخاب کنید",
+      "usageReply": "استفاده: {prefix}{name} <Video Name>",
+      "errorAlreadyCollector": "جمع‌آوری پیام از قبل در این کانال فعال است.",
+      "errorNotChannel": "ابتدا باید به یک ویس چنل بپیوندید!",
+      "resultEmbedTitle": "**با شماره آهنگی که می خواهید پخش شود پاسخ دهید**",
+      "resultEmbedDesc": "نتایج برای: {search}"
     },
     "shuffle": {
-      "description": "Shuffle queue",
-      "errorNotQueue": "There is no queue.",
-      "result": "<@{author}> 🔀 shuffled the queue"
+      "description": "به هم زدن صف",
+      "errorNotQueue": "هیچ صفی وجود ندارد.",
+      "result": "<@{author}> 🔀 صف را به هم ریخت"
     },
     "skip": {
-      "description": "Skip the currently playing song",
-      "errorNotQueue": "There is nothing playing that I could skip for you.",
-      "result": "<@{author}> ⏭ skipped the song"
+      "description": "از آهنگ در حال پخش رد شوید",
+      "errorNotQueue": "هیچ چیزی وجود ندارد که بتوانم برای شما از آن بگذرم.",
+      "result": "<@{author}> ⏭ آهنگ را رد کرد"
     },
     "skipto": {
-      "description": "Skip to the selected queue number",
-      "usageReply": "Usage: {prefix}{name} <Queue Number>",
-      "errorNotQueue": "There is no queue.",
-      "errorNotValid": "The queue is only {length} songs long!",
-      "result": "<@{author}> ⏭ skipped {arg} songs"
+      "description": "به شماره صف انتخاب شده پرش کنید",
+      "usageReply": "استفاده: {prefix}{name} <Queue Number>",
+      "errorNotQueue": "هیچ صفی وجود ندارد.",
+      "errorNotValid": "فقط یک اهنگ در صف است!",
+      "result": "<@{author}> ⏭ رد کردن {arg} اهنگ ها"
     },
     "stop": {
-      "description": "Stops the music",
-      "errorNotQueue": "There is nothing playing.",
-      "result": "<@{author}> ⏹ stopped the music!"
+      "description": "نگه داشت اهنگ",
+      "errorNotQueue": "چیزی برای پلی نیست.",
+      "result": "<@{author}> ⏹ اهنگ را نگه داشت!"
     },
     "uptime": {
-      "description": "Check the uptime",
-      "result": "Uptime: `{days} day(s),{hours} hours, {minutes} minutes, {seconds} seconds`"
+      "description": "زمان فعال بودن ",
+      "result": "زمان فعالیت: `{days} day(s),{hours} hours, {minutes} minutes, {seconds} seconds`"
     },
     "volume": {
-      "description": "Change volume of currently playing music",
-      "errorNotQueue": "There is nothing playing.",
-      "errorNotChannel": "You need to join a voice channel first!",
-      "currentVolume": "🔊 The current volume is: **{volume}%**",
-      "errorNotNumber": "Please use a number to set volume.",
-      "errorNotValid": "Please use a number between 0 - 100.",
-      "result": "Volume set to: **{arg}%**"
+      "description": "تغییر ولوم موسیقی در حال پخش",
+      "errorNotQueue": "چیزی برای پخش نیست.",
+      "errorNotChannel": "ابتدا باید به یک ویس چنل بپیوندید!",
+      "currentVolume": "🔊 ولوم الان : **{volume}%** است",
+      "errorNotNumber": "لطفاً از یک عدد برای تنظیم صدا استفاده کنید.",
+      "errorNotValid": "لطفا از عددی بین 0 تا 100 استفاده کنید.",
+      "result": "ولوم ست شده: **{arg}%**"
     },
     "common": {
-      "on": "**on**",
-      "off": "**off**",
-      "enabled": "**enabled**",
-      "disabled": "**disabled**",
-      "errorNotChannel": "You need to join a voice channel first!",
+      "on": "**روشن**",
+      "off": "**خاموش**",
+      "enabled": "**فعال**",
+      "disabled": "**غیر فعال**",
+      "errorNotChannel": "ابتدا باید به یک کانال صوتی بپیوندید!",
       "cooldownMessage": "please wait {time} more second(s) before reusing the `{name}` command.",
-      "errorCommand": "There was an error executing that command."
+      "errorCommand": "در اجرای آن فرمان خطایی روی داد."
     }
   }
   
