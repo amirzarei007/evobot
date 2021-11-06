@@ -84,6 +84,8 @@ module.exports = {
     dispatcher.setVolumeLogarithmic(queue.volume / 100);
 
     try {
+
+      
       var playingMessage = await queue.textChannel.send(
         i18n.__mf("play.startedPlaying", { title: song.title, url: song.url })
       );
@@ -113,8 +115,17 @@ module.exports = {
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.connection.dispatcher.end();
-          queue.textChannel.send(i18n.__mf("play.skipSong", { author: user })).catch(console.error);
+         async function mmd1(){
+
+          const mms = await queue.textChannel.send(i18n.__mf("play.skipSong", { author: user })).catch(console.error);
+
+          mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+
+          }
+          mmd1()
           collector.stop();
+         
+
           break;
 
         case "⏯":
@@ -127,7 +138,13 @@ module.exports = {
           } else {
             queue.playing = !queue.playing;
             queue.connection.dispatcher.resume();
-            queue.textChannel.send(i18n.__mf("play.resumeSong", { author: user })).catch(console.error);
+            async function mmd2(){
+           const mms = await queue.textChannel.send(i18n.__mf("play.resumeSong", { author: user })).catch(console.error);
+           mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd2()
           }
           break;
 
@@ -140,7 +157,13 @@ module.exports = {
             queue.textChannel.send(i18n.__mf("play.mutedSong", { author: user })).catch(console.error);
           } else {
             queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-            queue.textChannel.send(i18n.__mf("play.unmutedSong", { author: user })).catch(console.error);
+            async function mmd3(){
+         const mms = await   queue.textChannel.send(i18n.__mf("play.unmutedSong", { author: user })).catch(console.error);
+         mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd3()
           }
           break;
 
@@ -150,9 +173,15 @@ module.exports = {
           if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.volume = Math.max(queue.volume - 10, 0);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-          queue.textChannel
+          async function mmd4(){
+            const mms = await  queue.textChannel
             .send(i18n.__mf("play.decreasedVolume", { author: user, volume: queue.volume }))
             .catch(console.error);
+            mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd4()
           break;
 
         case "🔊":
@@ -161,16 +190,23 @@ module.exports = {
           if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.volume = Math.min(queue.volume + 10, 100);
           queue.connection.dispatcher.setVolumeLogarithmic(queue.volume / 100);
-          queue.textChannel
+          async function mmd5(){
+            const mms = await  queue.textChannel
             .send(i18n.__mf("play.increasedVolume", { author: user, volume: queue.volume }))
             .catch(console.error);
+            mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd5()
           break;
 
         case "🔁":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.loop = !queue.loop;
-          queue.textChannel
+          async function mmd6(){
+            const mms = await  queue.textChannel
             .send(
               i18n.__mf("play.loopSong", {
                 author: user,
@@ -178,13 +214,24 @@ module.exports = {
               })
             )
             .catch(console.error);
+            mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd6()
           break;
 
         case "⏹":
           reaction.users.remove(user).catch(console.error);
           if (!canModifyQueue(member)) return i18n.__("common.errorNotChannel");
           queue.songs = [];
-          queue.textChannel.send(i18n.__mf("play.stopSong", { author: user })).catch(console.error);
+          async function mmd7(){
+            const mms = await  queue.textChannel.send(i18n.__mf("play.stopSong", { author: user })).catch(console.error);
+            mms.delete({ timeout: 7000, reason: 'It had to be done.' })
+        
+
+          }
+          mmd7()
           try {
             queue.connection.dispatcher.end();
           } catch (error) {
